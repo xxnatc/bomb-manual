@@ -1,0 +1,47 @@
+[
+  {
+    "moduleName": "Wires (Basic)",
+    "imgPath": "image.png",
+    "moduleLink": "wires_basic.html"
+  },
+  {
+    "moduleName": "The Button",
+    "imgPath": "image.png",
+    "moduleLink": "button.html"
+  },
+  {
+    "moduleName": "Keypads (Symbols)",
+    "imgPath": "image.png",
+    "moduleLink": "keypads.html"
+  },
+  {
+    "moduleName": "Simon Says",
+    "imgPath": "image.png",
+    "moduleLink": "simon_says.html"
+  },
+  {
+    "moduleName": "Who's on First",
+    "imgPath": "image.png",
+    "moduleLink": "whos_first.html"
+  },
+  {
+    "moduleName": "Memory",
+    "imgPath": "image.png",
+    "moduleLink": "memory.html"
+  },
+  {
+    "moduleName": "Morse Code",
+    "imgPath": "image.png",
+    "moduleLink": "morse_code.html"
+  },
+  {
+    "moduleName": "Wires (Complicated)",
+    "imgPath": "image.png",
+    "moduleLink": "wires_complicated.html"
+  },
+  {
+    "moduleName": "Wire Squence",
+    "imgPath": "image.png",
+    "moduleLink": "wire_sequence.html"
+  }
+]

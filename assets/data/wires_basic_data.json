@@ -1,0 +1,216 @@
+{
+  "wires-base": {
+    "question": "How many wires are on the module?",
+    "answers": [
+      {"name": "wires-3", "text": "3 wires"},
+      {"name": "wires-4", "text": "4 wires"},
+      {"name": "wires-5", "text": "5 wires"},
+      {"name": "wires-6", "text": "6 wires"}
+    ]
+  },
+  "wires-3": {
+    "question": "Are there any red wires?",
+    "answers": [
+      {"name": "wires-3-red", "text": "Yes"},
+      {"name": "wires-3-nored", "text": "No"}
+    ]
+  },
+  "wires-3-red": {
+    "question": "Is the last wire white?",
+    "answers": [
+      {"name": "wires-3-white", "text": "Yes"},
+      {"name": "wires-3-notwhite", "text": "No"}
+    ]
+  },
+  "wires-3-nored": {
+    "ending": "Cut the second wire (from the top)."
+  },
+  "wires-3-white": {
+    "ending": "Cut the last wire."
+  },
+  "wires-3-notwhite": {
+    "question": "How many blue wires are there?",
+    "answers": [
+      {"name": "wires-3-lessblue", "text": "0"},
+      {"name": "wires-3-lessblue", "text": "1"},
+      {"name": "wires-3-moreblue", "text": "2"},
+      {"name": "wires-3-moreblue", "text": "3"}
+    ]
+  },
+  "wires-3-lessblue": {
+    "ending": "Cut the last wire."
+  },
+  "wires-3-moreblue": {
+    "ending": "Cut the last blue wire."
+  },
+
+
+  "wires-4": {
+    "question": "How many red wires are there?",
+    "answers": [
+      {"name": "wires-4-check-lastyellow", "text": "0"},
+      {"name": "wires-4-check-blue", "text": "1"},
+      {"name": "wires-4-check-lastodd", "text": "2"},
+      {"name": "wires-4-check-lastodd", "text": "3"},
+      {"name": "wires-4-check-lastodd", "text": "4"}
+    ]
+  },
+  "wires-4-check-lastodd": {
+    "question": "Is the last digit of the serial number even or odd?",
+    "answers": [
+      {"name": "wires-4-check-blue", "text": "Even"},
+      {"name": "wires-4-isodd", "text": "Odd"}
+    ]
+  },
+  "wires-4-isodd": {
+    "ending": "Cut the last red wire."
+  },
+  "wires-4-check-lastyellow": {
+    "question": "Is the last wire yellow?",
+    "answers": [
+      {"name": "wires-4-isyellow", "text": "Yes"},
+      {"name": "wires-4-check-blue", "text": "No"}
+    ]
+  },
+  "wires-4-isyellow": {
+    "ending": "Cut the first wire."
+  },
+  "wires-4-check-blue": {
+    "question": "How many blue wires are there?",
+    "answers": [
+      {"name": "wires-4-check-yellow", "text": "0"},
+      {"name": "wires-4-oneblue", "text": "1"},
+      {"name": "wires-4-check-yellow", "text": "2"},
+      {"name": "wires-4-check-yellow", "text": "3"},
+      {"name": "wires-4-check-yellow", "text": "4"}
+    ]
+  },
+  "wires-4-oneblue": {
+    "ending": "Cut the first wire."
+  },
+  "wires-4-check-yellow": {
+    "question": "How many yellow wires are there?",
+    "answers": [
+      {"name": "wires-4-lessyellow", "text": "0"},
+      {"name": "wires-4-lessyellow", "text": "1"},
+      {"name": "wires-4-moreyellow", "text": "2"},
+      {"name": "wires-4-moreyellow", "text": "3"},
+      {"name": "wires-4-moreyellow", "text": "4"}
+    ]
+  },
+  "wires-4-lessyellow": {
+    "ending": "Cut the second wire."
+  },
+  "wires-4-moreyellow": {
+    "ending": "Cut the last wire."
+  },
+
+
+  "wires-5": {
+    "question": "Is the last wire black?",
+    "answers": [
+      {"name": "wires-5-check-lastodd", "text": "Yes"},
+      {"name": "wires-5-check-red", "text": "No"}
+    ]
+  },
+  "wires-5-check-lastodd": {
+    "question": "Is the last digit of the serial number even or odd?",
+    "answers": [
+      {"name": "wires-5-check-red", "text": "Even"},
+      {"name": "wires-5-isodd", "text": "Odd"}
+    ]
+  },
+  "wires-5-isodd": {
+    "ending": "Cut the fourth wire (from the top)."
+  },
+  "wires-5-check-red": {
+    "question": "How many red wires are there?",
+    "answers": [
+      {"name": "wires-5-check-black", "text": "0"},
+      {"name": "wires-5-check-yellow", "text": "1"},
+      {"name": "wires-5-check-black", "text": "2"},
+      {"name": "wires-5-check-black", "text": "3"},
+      {"name": "wires-5-check-black", "text": "4"},
+      {"name": "wires-5-check-black", "text": "5"}
+    ]
+  },
+  "wires-5-check-yellow": {
+    "question": "How many yellow wires are there?",
+    "answers": [
+      {"name": "wires-5-check-black", "text": "0"},
+      {"name": "wires-5-check-black", "text": "1"},
+      {"name": "wires-5-moreyellow", "text": "2"},
+      {"name": "wires-5-moreyellow", "text": "3"},
+      {"name": "wires-5-moreyellow", "text": "4"},
+      {"name": "wires-5-moreyellow", "text": "5"}
+    ]
+  },
+  "wires-5-moreyellow": {
+    "ending": "Cut the first wire."
+  },
+  "wires-5-check-black": {
+    "question": "Are there any black wires?",
+    "answers": [
+      {"name": "wires-5-black", "text": "Yes"},
+      {"name": "wires-5-noblack", "text": "No"}
+    ]
+  },
+  "wires-5-noblack": {
+    "ending": "Cut the second wire (from the top)."
+  },
+  "wires-5-black": {
+    "ending": "Cut the first wire."
+  },
+
+
+  "wires-6": {
+    "question": "How many yellow wires are there?",
+    "answers": [
+      {"name": "wires-6-check-lastodd", "text": "0"},
+      {"name": "wires-6-check-white", "text": "1"},
+      {"name": "wires-6-check-red", "text": "2"},
+      {"name": "wires-6-check-red", "text": "3"},
+      {"name": "wires-6-check-red", "text": "4"},
+      {"name": "wires-6-check-red", "text": "5"},
+      {"name": "wires-6-check-red", "text": "6"}
+    ]
+  },
+  "wires-6-check-lastodd": {
+    "question": "Is the last digit of the serial number even or odd?",
+    "answers": [
+      {"name": "wires-6-check-red", "text": "Even"},
+      {"name": "wires-6-isodd", "text": "Odd"}
+    ]
+  },
+  "wires-6-isodd": {
+    "ending": "Cut the third wire (from the top)."
+  },
+  "wires-6-check-white": {
+    "question": "How many white wires are there?",
+    "answers": [
+      {"name": "wires-6-check-red", "text": "0"},
+      {"name": "wires-6-check-red", "text": "1"},
+      {"name": "wires-6-morewhite", "text": "2"},
+      {"name": "wires-6-morewhite", "text": "3"},
+      {"name": "wires-6-morewhite", "text": "4"},
+      {"name": "wires-6-morewhite", "text": "5"},
+      {"name": "wires-6-morewhite", "text": "6"}
+    ]
+  },
+  "wires-6-morewhite": {
+    "ending": "Cut the fourth wire (from the top)."
+  },
+  "wires-6-check-red": {
+    "question": "Are there any red wires?",
+    "answers": [
+      {"name": "wires-6-red", "text": "Yes"},
+      {"name": "wires-6-nored", "text": "No"}
+    ]
+  },
+  "wires-6-nored": {
+    "ending": "Cut the last wire."
+  },
+  "wires-6-red": {
+    "ending": "Cut the fourth wire (from the top)."
+  }
+}
