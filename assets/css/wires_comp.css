@@ -1,0 +1,11 @@
+.segment.wc-form {
+  padding: 24px 24px 18px 24px;
+}
+.wc-form .checkbox {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.wc-form .button {
+  margin-top: 8px;
+}

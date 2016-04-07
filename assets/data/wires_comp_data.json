@@ -1,0 +1,28 @@
+{
+  "instructions": {
+    "C": "Cut the wire",
+    "D": "Do not cut the wire",
+    "S": "Cut the wire if the last digit of the serial number is even",
+    "P": "Cut the wire if the bomb has a parallel port",
+    "B": "Cut the wire if the bomb has two or more batteries"
+  },
+  "readOrder": ["red", "blue", "star", "led"],
+  "venn": {
+    "FFFF": "C",
+    "FFFT": "D",
+    "FFTF": "C",
+    "FFTT": "B",
+    "FTFF": "S",
+    "FTFT": "P",
+    "FTTF": "D",
+    "FTTT": "P",
+    "TFFF": "S",
+    "TFFT": "B",
+    "TFTF": "C",
+    "TFTT": "B",
+    "TTFF": "S",
+    "TTFT": "S",
+    "TTTF": "P",
+    "TTTT": "D"
+  }
+}

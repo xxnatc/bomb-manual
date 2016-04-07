@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Complicated Wires</title>
+    <link rel="stylesheet" href="assets/vendor/css/semantic.min.css">
+    <link rel="stylesheet" href="assets/css/wires_comp.css">
+
+  </head>
+  <body>
+    <section id="wires-comp" class="ui text container">
+      <h1>Complicated Wires</h1>
+
+      <div class="ui grid">
+        <aside class="eight wide column">
+          <form class="ui segment wc-form">
+            <div class="ui toggle checkbox">
+              <input type="checkbox" data-wc-prop="red">
+              <label>Wire has RED coloring</label>
+            </div>
+            <div class="ui toggle checkbox">
+              <input type="checkbox" data-wc-prop="blue">
+              <label>Wire has BLUE coloring</label>
+            </div>
+            <div class="ui toggle checkbox">
+              <input type="checkbox" data-wc-prop="star">
+              <label>Wire has ★ symbol</label>
+            </div>
+            <div class="ui toggle checkbox">
+              <input type="checkbox" data-wc-prop="led">
+              <label>LED is ON</label>
+            </div>
+            <br>
+            <button class="ui primary button" id="wc-run">Get Instructions</button>
+            <button class="ui button" id="wc-reset">Reset</button>
+          </form>
+        </aside>
+
+        <div class="eight wide column">
+          <article id="wc-results-default">
+            Check things on the left
+          </article>
+          <article id="wc-results-custom"></article>
+
+        </div>
+      </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
+    <script src="assets/vendor/js/handlebars-v4.0.5.js" charset="utf-8"></script>
+    <script src="assets/vendor/js/checkbox.min.js" charset="utf-8"></script>
+
+    <script src="assets/js/module_wires_comp.js" charset="utf-8"></script>
+  </body>
+</html>
