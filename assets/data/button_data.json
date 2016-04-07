@@ -1,0 +1,44 @@
+{
+  "button-color": {
+    "question": "What color is the button?",
+    "answers": [
+      {"text": "Blue", "btnClass": "blue"},
+      {"text": "Red", "btnClass": "red"},
+      {"text": "White", "btnClass": "basic"},
+      {"text": "Yellow", "btnClass": "yellow"},
+      {"text": "Other"}
+    ]
+  },
+  "button-text": {
+    "question": "What does it say on the button?",
+    "answers": [
+      {"text": "\"Abort\""},
+      {"text": "\"Detonate\""},
+      {"text": "\"Hold\""},
+      {"text": "Other"}
+    ]
+  },
+  "button-battery": {
+    "question": "How many batteries do you see on the bomb?",
+    "answers": [
+      {"text": "0"},
+      {"text": "1"},
+      {"text": "2+"}
+    ]
+  },
+  "button-lit-car": {
+    "question": "Is there a lit indicator with label \"CAR\"?",
+    "answers": [
+      {"text": "Yes"},
+      {"text": "No"}
+    ]
+  },
+  "button-lit-frk": {
+    "question": "Is there a lit indicator with label \"FRK\"?",
+    "answers": [
+      {"text": "Yes"},
+      {"text": "No"}
+    ]
+  }
+
+}

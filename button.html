@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Button</title>
+    <link rel="stylesheet" href="assets/vendor/css/semantic.min.css">
+    <style media="screen">
+      .ending.header {
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="the-button" class="ui text container">
+      <h1>The Button</h1>
+
+      <article class="ui teal inverted segment button-ending" id="button-immediate">
+        <p class="">We're ready!</p>
+        <h1 class="ending header">Press and immediately release the button</h1>
+
+        <button type="button" name="reset" class="ui inverted button btn-reset">New button module</button>
+        <button type="button" name="new-module" class="ui inverted button btn-home">Other modules</button>
+      </article>
+
+      <article class="button-ending" id="button-hold">
+        hold and check color
+        <button type="button" name="reset" class="ui button btn-reset">New button module</button>
+        <button type="button" name="new-module" class="ui button btn-home">Other modules</button>
+      </article>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
+    <script src="assets/vendor/js/handlebars-v4.0.5.js" charset="utf-8"></script>
+    <script src="assets/js/load_mc.js" charset="utf-8"></script>
+
+    <script src="assets/js/module_button.js" charset="utf-8"></script>
+  </body>
+</html>
