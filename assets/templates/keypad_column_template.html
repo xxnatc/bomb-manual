@@ -1,0 +1,13 @@
+<div class="ui relaxed grid">
+  <div class="six column row">
+    {{#each positions}}
+    <article class="column keypad-column" data-col="{{@index}}">
+      {{#each this}}
+        <div class="sixteen wide column keypad-cell">
+          <img src="assets/img/symbols/{{this}}.png" data-symbol="{{this}}" />
+        </div>
+      {{/each}}
+    </article>
+    {{/each}}
+  </div>
+</div>

@@ -10,9 +10,9 @@
     "moduleLink": "button.html"
   },
   {
-    "moduleName": "Keypads (Symbols)",
+    "moduleName": "Keypad (Symbols)",
     "imgPath": "image.png",
-    "moduleLink": "keypads.html"
+    "moduleLink": "keypad.html"
   },
   {
     "moduleName": "Simon Says",

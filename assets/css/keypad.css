@@ -1,0 +1,20 @@
+.keypad-column:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.keypad-cell {
+  /*background-color: #F0F0F0;*/
+}
+
+.keypad-cell img {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.keypad-cell .selected {
+  background-color: #DDD;
+}
+
+.keypad-cell .confirmed {
+  background-color: #FFD700;
+}
