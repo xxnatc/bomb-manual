@@ -20,8 +20,9 @@ let getKeypadData = new Promise(function(resolve, reject) {
   });
 });
 
-Promise.all([getColTemplate, getKeypadData])
+let keypadSetup = Promise.all([getColTemplate, getKeypadData])
   .then(function() {
+    $('#module-keypad').hide();
     renderKeypad();
     setupKeypadListeners();
   });
@@ -46,7 +47,7 @@ function setupKeypadListeners() {
   });
 }
 
-var keypad = {};
+let keypad = {};
 
 keypad.current = [];
 
@@ -91,3 +92,15 @@ keypad.checkFour = function() {
     }
   });
 };
+
+function initKeypadModule() {
+  keypad.current = [];
+  $('#module-keypad .keypad-cell')
+    .each(function(_, el) {
+      let $el = $(el).removeClass('selected confirmed');
+    });
+
+  $('#module-keypad').fadeIn();
+}
+
+keypadSetup.then(initKeypadModule);

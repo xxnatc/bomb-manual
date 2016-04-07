@@ -9,29 +9,26 @@ let getWiresData = new Promise(function(resolve, reject) {
   });
 });
 
-Promise.all([getMCTemplates, getWiresData])
+let wiresSetup = Promise.all([getMCTemplates, getWiresData])
   .then(function() {
+    $('#wires-basic').hide();
     renderAllQuestions(wiresData, 'wires-basic-q', 'wires-basic', function() {
-      $('.wires-basic-q:not(#wires-base)').hide();
-      setupListeners();
+      setupWiresListeners();
+      // $('.wires-basic-q:not(#wires-base)').hide();
     });
   });
 
-
-function setupListeners() {
+function setupWiresListeners() {
   $('#wires-basic').on('click', '.wires-basic-q .btn-answer', function(event) {
     event.preventDefault();
     let articleId = $(event.target).parents('.wires-basic-q').attr('id');
     let answer = $(event.target).attr('name');
-    // handleWires(articleId, answer);
     handleMC(articleId, answer);
-
   });
 
   $('#wires-basic').on('click', '.wires-basic-q .btn-reset', function(event) {
     event.preventDefault();
-    $('.wires-basic-q:not(#wires-base)').hide();
-    $('#wires-base').fadeIn();
+    initWiresModule();
   });
 
   $('#wires-basic').on('click', '.wires-basic-q .btn-home', function(event) {
@@ -40,7 +37,10 @@ function setupListeners() {
   });
 }
 
-// function handleWires(articleId, answer) {
-//   $('#' + articleId).hide();
-//   $('#' + answer).fadeIn();
-// }
+function initWiresModule() {
+  $('.wires-basic-q:not(#wires-base)').hide();
+  $('#wires-basic').show();
+  $('#wires-base').fadeIn();
+}
+
+wiresSetup.then(initWiresModule);

@@ -11,6 +11,7 @@ let getButtonData = new Promise(function(resolve, reject) {
 
 let buttonSetup = Promise.all([getMCTemplates, getButtonData])
   .then(function() {
+    $('#the-button').hide();
     renderButtonQuestions();
   });
 
@@ -31,12 +32,26 @@ function renderButtonQuestions() {
 
     $('#the-button').append(html);
   }
-  $('.button-q, .button-ending').hide();
+  // $('.button-q, .button-ending, #the-button').hide();
+  setupButtonListeners();
+}
+
+function setupButtonListeners() {
+  $('.button-ending').on('click', '.btn-reset', function(event) {
+    event.preventDefault();
+    initButtonModule();
+  });
+
+  $('.button-ending').on('click', '.btn-home', function(event) {
+    event.preventDefault();
+    $(location).attr('href', 'module_menu.html');
+  });
 }
 
 function initButtonModule() {
   let details = {};
   $('.button-q, .button-ending').hide();
+  $('#the-button').show();
 
   function askDetail(questionId, property, callback) {
     callback = callback || function() {};
@@ -147,16 +162,4 @@ function initButtonModule() {
   startFirstRound();
 }
 
-buttonSetup.then(function() {
-  initButtonModule();
-});
-
-$('.button-ending').on('click', '.btn-reset', function(event) {
-  event.preventDefault();
-  initButtonModule();
-});
-
-$('.button-ending').on('click', '.btn-home', function(event) {
-  event.preventDefault();
-  $(location).attr('href', 'module_menu.html');
-});
+buttonSetup.then(initButtonModule);
