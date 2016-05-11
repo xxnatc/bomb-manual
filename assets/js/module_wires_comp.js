@@ -33,10 +33,9 @@ wiresComp.getInstructions = function() {
 };
 
 $('.wc-form .checkbox').checkbox({
-  onChecked: function() {
+  onChange: function() {
     let prop = $(this).data().wcProp;
     wiresComp.current[prop] = !wiresComp.current[prop];
-    // console.log(wiresComp.current);
   }
 });
 
